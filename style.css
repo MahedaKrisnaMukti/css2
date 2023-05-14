@@ -1,17 +1,69 @@
-body{
-    background-color:azure;
-}
-.grid-container {
-    display:grid;
-    gap: 10px;
-    background-color: #2196f3;
-    padding: 10px;
-  }
-header h1{
-    position: left;
-}
-header h3{
-    position:static;
-    
+body {
+    background-color: #e2e8f0;
+    font-family: 'Poppins';
+    font-size: 12pt;
 }
 
+.btn-primary {
+    background-color: #3b82f6;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: transparent;
+    color: white;
+}
+
+.btn-danger {
+    background-color: transparent;
+    border: none;
+    color: red;
+}
+
+.content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-group {
+    padding-right: 20px;
+}
+
+.form-label {
+    font-size: 12pt;
+    display: block;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.image-profile {
+    max-width: 50px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.table {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+tr>td {
+    padding: 10px;
+}

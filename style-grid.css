@@ -1,0 +1,22 @@
+.navbar {
+    grid-area: navbar;
+}
+
+.main {
+    grid-area: main;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'navbar navbar'
+        'main main';
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.grid-double-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}

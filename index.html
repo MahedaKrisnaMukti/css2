@@ -1,55 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Student Portal</title>
-  </head>
 
-  <body>
-    <header>
-      <h1>Studen Portal</h1>
-      <h3>Admin</h3>
-      <img src="https://img.freepik.com/free-icon/user_318-644325.jpg" />
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <div class="grid-container">
-      <section class="form">
-        <form id="form-student">
-          <label for="input-name">Fullname</label>
-          <input type="text" id="input-name" /><br />
-          <label for="input-date">Birth Date</label>
-          <input type="date" id="input-date" /><br />
-          <label for="input-gender">Gender</label>
-          <select id="input-gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option></select
-          ><br />
-          <label for="input-prody">Program Study</label>
-          <select id="input-prody">
-            <option value="ekonomi">Ekonomi</option>
-            <option value="manajemen">Manajemen</option>
-            <option value="akuntansi">Akuntansi</option>
-            <option value="administrasi publik">Administrasi Publik</option>
-            <option value="administrasi bisnis">Administrasi Bisnis</option>
-            <option value="hubungan internasional">
-              Hubungan Internasional
-            </option>
-            <option value="teknik sipil">Teknik Sipil</option>
-            <option value="arsitektur">Arsitektur</option>
-            <option value="matematika">Matematika</option>
-            <option value="fisika">Fisika</option>
-            <option value="informatika">Informatika</option></select
-          ><br />
-          <input type="submit" id="add-btn" value="Add student" /><br />
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-grid.css" />
+  <link rel="stylesheet" href="style-helper.css" />
+
+  <title>Student Portal</title>
+</head>
+
+<body>
+  <div class="grid-container">
+    <!-- Navbar -->
+    <div class="navbar">
+      <h1>Student Portal</h1>
+
+      <div class="profile">
+        <h3>Admin</h3>
+
+        <img class="image-profile" src="https://img.freepik.com/free-icon/user_318-644325.jpg" />
+      </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="main content mt-1">
+      <!-- Form -->
+      <section class="mb-2">
+        <form>
+          <div class="form-group mb-2">
+            <label class="form-label" for="fullname"> Fullname </label>
+
+            <input class="form-control" type="text" name="fullname" id="fullname" placeholder="Enter Your Fullname"
+              autocomplete="off" />
+          </div>
+
+          <div class="grid-double-column">
+            <div class="form-group mb-2">
+              <label class="form-label" for="birthDate"> Birth Date </label>
+
+              <input class="form-control" type="date" name="birthDate" id="birthDate"
+                placeholder="Enter Your Birth Date" autocomplete="off" />
+            </div>
+
+            <div class="form-group mb-2">
+              <label class="form-label" for="gender"> Gender </label>
+
+              <select class="form-control" name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group mb-2">
+            <label class="form-label" for="studyProgram"> Program Study </label>
+
+            <select class="form-control" name="studyProgram" id="studyProgram">
+              <option value="ekonomi">Ekonomi</option>
+              <option value="manajemen">Manajemen</option>
+              <option value="akuntansi">Akuntansi</option>
+              <option value="administrasi publik">Administrasi Publik</option>
+              <option value="administrasi bisnis">Administrasi Bisnis</option>
+              <option value="hubungan internasional">
+                Hubungan Internasional
+              </option>
+              <option value="teknik sipil">Teknik Sipil</option>
+              <option value="arsitektur">Arsitektur</option>
+              <option value="matematika">Matematika</option>
+              <option value="fisika">Fisika</option>
+              <option value="informatika">Informatika</option>
+            </select>
+          </div>
+
+          <button class="btn-primary"> Add Student </button>
         </form>
       </section>
 
-      <section class="table">
-        <table id="table-student">
-          <thead>
+      <hr class="mb-2">
+
+      <!-- Table -->
+      <section class="mb-2">
+        <table class="table">
+          <thead class="text-center">
             <tr>
               <th>No</th>
               <th>Full Name</th>
@@ -61,7 +100,8 @@
               <th>Option</th>
             </tr>
           </thead>
-          <tbody id="student-data">
+
+          <tbody class="text-center">
             <tr>
               <td>1</td>
               <td>Maheda Krisna Mukti</td>
@@ -70,8 +110,11 @@
               <td>A11.2020.13054</td>
               <td>Ilmu Komputer</td>
               <td>Teknik Informatika</td>
-              <td><button type="button" class="delete-btn">Delete</button></td>
+              <td>
+                <button type="button" class="btn-danger">Delete</button>
+              </td>
             </tr>
+
             <tr>
               <td>2</td>
               <td>Muhammad Nabil Reyhan Savero</td>
@@ -80,11 +123,17 @@
               <td>A11.2020.12407</td>
               <td>Ilmu Komputer</td>
               <td>Teknik Informatika</td>
-              <td><button type="button" class="delete-btn">Delete</button></td>
+              <td>
+                <button type="button" class="btn-danger">Delete</button>
+              </td>
             </tr>
           </tbody>
         </table>
       </section>
     </div>
-  </body>
+  </div>
+  <!-- Content -->
+  </div>
+</body>
+
 </html>
