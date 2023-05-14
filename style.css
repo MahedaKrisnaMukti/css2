@@ -1,0 +1,17 @@
+body{
+    background-color:azure;
+}
+.grid-container {
+    display:grid;
+    gap: 10px;
+    background-color: #2196f3;
+    padding: 10px;
+  }
+header h1{
+    position: left;
+}
+header h3{
+    position:static;
+    
+}
+

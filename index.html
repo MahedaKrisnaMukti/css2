@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Student Portal</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Studen Portal</h1>
+      <h3>Admin</h3>
+      <img src="https://img.freepik.com/free-icon/user_318-644325.jpg" />
+    </header>
+
+    <div class="grid-container">
+      <section class="form">
+        <form id="form-student">
+          <label for="input-name">Fullname</label>
+          <input type="text" id="input-name" /><br />
+          <label for="input-date">Birth Date</label>
+          <input type="date" id="input-date" /><br />
+          <label for="input-gender">Gender</label>
+          <select id="input-gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option></select
+          ><br />
+          <label for="input-prody">Program Study</label>
+          <select id="input-prody">
+            <option value="ekonomi">Ekonomi</option>
+            <option value="manajemen">Manajemen</option>
+            <option value="akuntansi">Akuntansi</option>
+            <option value="administrasi publik">Administrasi Publik</option>
+            <option value="administrasi bisnis">Administrasi Bisnis</option>
+            <option value="hubungan internasional">
+              Hubungan Internasional
+            </option>
+            <option value="teknik sipil">Teknik Sipil</option>
+            <option value="arsitektur">Arsitektur</option>
+            <option value="matematika">Matematika</option>
+            <option value="fisika">Fisika</option>
+            <option value="informatika">Informatika</option></select
+          ><br />
+          <input type="submit" id="add-btn" value="Add student" /><br />
+        </form>
+      </section>
+
+      <section class="table">
+        <table id="table-student">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Full Name</th>
+              <th>Birth Date</th>
+              <th>Gender</th>
+              <th>Student ID</th>
+              <th>Faculty</th>
+              <th>Program Study</th>
+              <th>Option</th>
+            </tr>
+          </thead>
+          <tbody id="student-data">
+            <tr>
+              <td>1</td>
+              <td>Maheda Krisna Mukti</td>
+              <td>07/08/01</td>
+              <td>Male</td>
+              <td>A11.2020.13054</td>
+              <td>Ilmu Komputer</td>
+              <td>Teknik Informatika</td>
+              <td><button type="button" class="delete-btn">Delete</button></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Muhammad Nabil Reyhan Savero</td>
+              <td>03/03/02</td>
+              <td>Male</td>
+              <td>A11.2020.12407</td>
+              <td>Ilmu Komputer</td>
+              <td>Teknik Informatika</td>
+              <td><button type="button" class="delete-btn">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </body>
+</html>
